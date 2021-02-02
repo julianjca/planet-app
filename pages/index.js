@@ -1,3 +1,6 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 
@@ -23,6 +26,7 @@ const HomePage = ({ data }) => {
   )
 }
 
+// data fetching
 export const getStaticProps = async() => {
   const res = await fetch('https://swapi.dev/api/planets')
   const data = await res.json()
@@ -32,6 +36,12 @@ export const getStaticProps = async() => {
       data,
     }
   }
+}
+
+HomePage.propTypes = {
+  data: PropTypes.shape({
+    results: PropTypes.array,
+  })
 }
 
 export default HomePage

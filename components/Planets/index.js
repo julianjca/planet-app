@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './Planets.module.scss'
 import Card from './Card'
@@ -11,6 +12,10 @@ const Planets = ({ planets }) => {
       ))}
     </div>
   )
+}
+
+Planets.propTypes = {
+  planets: PropTypes.array,
 }
 
 export default Planets
