@@ -8,8 +8,8 @@ const SearchInput = ({ handleSearchChange, searchInput, searchPlanet, handleKeyD
     <div className={styles.wrapper}>
       <input 
         onKeyDown={handleKeyDown} 
-        onChange={handleSearchChange} v
-        alue={searchInput} 
+        onChange={handleSearchChange}
+        value={searchInput} 
         className={styles.input} 
         placeholder="Search..." 
       />
