@@ -12,6 +12,7 @@ const SearchInput = ({ handleSearchChange, searchInput, searchPlanet, handleKeyD
         value={searchInput} 
         className={styles.input} 
         placeholder="Search..." 
+        data-testid="planet_input"
       />
       <button onClick={searchPlanet} className={styles.button}>Search</button>
     </div>
