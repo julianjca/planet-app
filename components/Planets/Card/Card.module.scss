@@ -4,17 +4,20 @@
   color: inherit;
   text-decoration: none;
   border: 2px solid #eaeaea;
-  border-radius: 10px;
-  transition: all 0.15s ease-in-out;
+  border-radius: 20px;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
+  color: #1c1c1c;
 
   &:hover {
-    background-color: #ffffff;
-    color: #0070f3;
+    // background-color: #ffffff;
+    box-shadow: 5px 10px 15px #ffffff70;
+    // color: #ffffff;
     border-width: 2px;
-    transition: all 0.15 ease-in-out;
+    transition: all 0.25 ease-in-out;
   }
 }

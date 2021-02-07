@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import styles from '../../styles/Home.module.scss'
+import PlanetDetail from '../../components/PlanetDetail'
 
-const HomePage = ({ data }) => {
-  
+const PlanetPage = ({ data }) => {  
   return (
     <div className={styles.container}>
        <main className={styles.main}>
-          <h1 className={styles.title}>{data.name}</h1>
+          <PlanetDetail data={data} />
        </main>
     </div>
   )
@@ -26,10 +26,11 @@ export const getServerSideProps = async(context) => {
   }
 }
 
-HomePage.propTypes = {
+PlanetPage.propTypes = {
   data: PropTypes.shape({
     results: PropTypes.array,
+    name: PropTypes.string,
   })
 }
 
-export default HomePage
+export default PlanetPage
