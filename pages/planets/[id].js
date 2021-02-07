@@ -5,6 +5,7 @@ import styles from '../../styles/Home.module.scss'
 import PlanetDetail from '../../components/PlanetDetail'
 
 const PlanetPage = ({ data }) => {  
+  console.log(JSON.stringify(data))
   return (
     <div className={styles.container}>
        <main className={styles.main}>

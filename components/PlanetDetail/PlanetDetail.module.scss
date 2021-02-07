@@ -13,13 +13,7 @@
   display: none;
   z-index: 98;
 
-  @media (min-width: 720px) {
-    display: block;
-    position: absolute;
-    right: -300px;
-    top: 0;
-  }
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     display: block;
     position: absolute;
     right: -200px;
@@ -36,7 +30,8 @@
 
 .image_wrapper_mobile {
   margin-top: 40px;
-  @media (min-width: 720px) {
+
+  @media (min-width: 1000px) {
     display: none;
   }
 }

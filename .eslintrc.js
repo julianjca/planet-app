@@ -3,4 +3,7 @@ module.exports = {
   rules: {
     // your overrides
   },
+  "env": {
+    "jest": true
+  }
 }

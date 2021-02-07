@@ -49,8 +49,8 @@ PlanetDetail.propTypes = {
   data: PropTypes.shape({
     results: PropTypes.array,
     name: PropTypes.string,
-    diameter: PropTypes.number,
-    orbital_period: PropTypes.number,
+    diameter: PropTypes.string,
+    orbital_period: PropTypes.string,
     population: PropTypes.string,
     climate: PropTypes.string,
   })
