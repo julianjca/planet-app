@@ -8,10 +8,14 @@
     "start-prod": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
     "next": "10.0.6",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-spinners": "^0.10.4",
     "sass": "^1.32.6"
   },
   "devDependencies": {
