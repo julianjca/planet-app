@@ -1,20 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Button, Input } from '../Shared'
 import styles from './SearchInput.module.scss'
 
 const SearchInput = ({ handleSearchChange, searchInput, searchPlanet, handleKeyDown }) => {
   return (
     <div className={styles.wrapper}>
-      <input 
+      <Input 
         onKeyDown={handleKeyDown} 
         onChange={handleSearchChange}
         value={searchInput} 
-        className={styles.input} 
         placeholder="Search..." 
         data-testid="planet_input"
+        name="planet_input"
+        width={320}
       />
-      <button onClick={searchPlanet} className={styles.button}>Search</button>
+      <Button 
+        onClick={searchPlanet} 
+        width={200}
+      >
+        Search
+      </Button>
     </div>
   )
 }

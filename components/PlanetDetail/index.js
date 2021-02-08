@@ -10,7 +10,9 @@ const PlanetDetail = ({ data }) => {
     <>
       <div className={styles.wrapper}>
         <Link href="/">
-          <a>
+          <a style={{
+            color: '#4DF2FF'
+          }}>
             back
           </a>
         </Link>

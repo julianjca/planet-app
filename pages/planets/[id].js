@@ -1,17 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Head from 'next/head'
 
 import styles from '../../styles/Home.module.scss'
 import PlanetDetail from '../../components/PlanetDetail'
 
 const PlanetPage = ({ data }) => {  
-  console.log(JSON.stringify(data))
   return (
-    <div className={styles.container}>
-       <main className={styles.main}>
+    <>
+      <Head>
+        <title>
+          {data.name}
+        </title>
+      </Head>
+      <div className={styles.container}>
+        <main className={styles.main}>
           <PlanetDetail data={data} />
-       </main>
-    </div>
+        </main>
+      </div>
+    </>
+    
   )
 }
 
