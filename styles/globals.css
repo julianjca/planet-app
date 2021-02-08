@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: linear-gradient(#04192B, #0B161F, #000000);
+  background: linear-gradient(to right, #04192B, #0B161F, #000000);
 }
 
 a {

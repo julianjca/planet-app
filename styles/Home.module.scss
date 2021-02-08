@@ -9,11 +9,15 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 720px) {
+    padding: 5rem 0;
+  }
 }
 
 .title span {
@@ -24,13 +28,20 @@
 .title {
   margin: 0;
   line-height: 1.3;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.subtitle {
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', serif;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.loader_wrapper {
+  margin: 1.5rem 0;
 }

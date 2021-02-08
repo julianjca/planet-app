@@ -62,8 +62,11 @@ const HomePage = ({ data }) => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <br /> <span>The Planet App</span>
+          The planet app
         </h1>
+        <p className={styles.subtitle}>
+          Browse the planet you love from Star Wars below.
+        </p>
         <SearchInput 
           handleKeyDown={handleKeyDown} 
           searchPlanet={searchPlanet} 
@@ -72,14 +75,18 @@ const HomePage = ({ data }) => {
         />
         {
           isLoading ? (
-            <ClipLoader color="#ffffff" loading={isLoading} size={50} />
+            <div className={styles.loader_wrapper}>
+              <ClipLoader color="#ffffff" loading={isLoading} size={30} />
+            </div>
           ) : (
             <>
             
               <Planets planets={planets} />
               {
                 isLoadingMore && (
-                  <ClipLoader color="#ffffff" loading={isLoadingMore} size={50} />
+                  <div className={styles.loader_wrapper}>
+                    <ClipLoader color="#ffffff" loading={isLoadingMore} size={30} />
+                  </div>
                 )
               }
             </>

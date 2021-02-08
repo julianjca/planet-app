@@ -16,31 +16,29 @@ const PlanetDetail = ({ data }) => {
             back
           </a>
         </Link>
-        <h1 className={styles.title}>{data.name}</h1>
-        <div className={styles.property_container}>
-          <h3 className={styles.property_name}>climate</h3>
-          <span className={styles.property_value}>{data.climate}</span>
-        </div>
+        <div className={styles.inner}>
+          <p className={styles.subtitle}>PLANET</p>
+          <h1 className={styles.title}>{data.name}</h1>
+          <div className={styles.property_container}>
+            <h3 className={styles.property_name}>climate</h3>
+            <span className={styles.property_value}>{data.climate}</span>
+          </div>
 
-        <div className={styles.property_container}>
-          <h3 className={styles.property_name}>population</h3>
-          <span className={styles.property_value}>{data.population}</span>
-        </div>
+          <div className={styles.property_container}>
+            <h3 className={styles.property_name}>population</h3>
+            <span className={styles.property_value}>{data.population}</span>
+          </div>
 
-        <div className={styles.property_container}>
-          <h3 className={styles.property_name}>orbital period</h3>
-          <span className={styles.property_value}>{data.orbital_period}</span>
+          <div className={styles.property_container}>
+            <h3 className={styles.property_name}>orbital period</h3>
+            <span className={styles.property_value}>{data.orbital_period}</span>
+          </div>
+          <div className={styles.property_container}>
+            <h3 className={styles.property_name}>diameter</h3>
+            <span className={styles.property_value}>{data.diameter}</span>
+          </div>
+          <Image src="/planet.png" height={800} width={800} alt="planet" /> 
         </div>
-        <div className={styles.property_container}>
-          <h3 className={styles.property_name}>diameter</h3>
-          <span className={styles.property_value}>{data.diameter}</span>
-        </div>
-        <div className={styles.image_wrapper_mobile}>
-          <Image src="/planet.png" height={300} width={300} alt="planet" /> 
-        </div>
-      </div>
-     <div className={styles.image_wrapper_desktop}>
-        <Image src="/planet.png" height={800} width={800} alt="planet" /> 
       </div>
     </>
   
